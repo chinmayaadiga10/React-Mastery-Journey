@@ -1,16 +1,99 @@
-# React + Vite
+# 👟 Brand Page (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Nike-inspired brand landing page** built using React.
+This project focuses on mastering **component-based architecture, layout design, and clean UI implementation** using Flexbox.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🧩 Features
 
-## React Compiler
+- 🎯 Clean and minimal landing page UI
+- ⚛️ Built using reusable React components
+- 📐 Flexbox-based responsive layout
+- 🎨 Styled to closely match Figma design
+- 🖼️ Asset handling using public folder
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+| Technology        | Purpose                      |
+| ----------------- | ---------------------------- |
+| React (Vite)      | Building UI using components |
+| JavaScript (ES6+) | Logic and structure          |
+| CSS (Flexbox)     | Layout and styling           |
+| HTML5             | Base structure               |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+```bash
+.
+└── Nike Brand Page/
+    ├── public/
+    │   └── images/
+    │       ├── amazon.png
+    │       ├── flipkart.png
+    │       ├── show_image.png
+    │       ├── brand_logo.png
+    │       └── Preview Image.png
+    ├── src/
+    │   ├── assets
+    │   ├── components/
+    │   │   ├── Hero.css
+    │   │   ├── Hero.jsx
+    │   │   ├── Navigation.css
+    │   │   └── Navigation.jsx
+    │   ├── App.css
+    │   ├── App.jsx
+    │   ├── Main.jsx
+    │   └── index.css
+    ├── index.html
+    ├── package.json
+    └── README.md
+```
+
+---
+
+## 📚 What I Learned
+
+- Structuring React components for UI development
+- Managing layout using Flexbox (`align-items`, `justify-content`)
+- Debugging CSS issues like:
+  - Overflow & unwanted scrollbars
+  - Alignment inconsistencies
+  - Spacing & visual balance
+
+- Importance of **design-to-code accuracy (Figma → UI)**
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/react-mastery-journey.git
+
+# Navigate to project
+cd react-mastery-journey/01-brand-page
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+---
+
+## 🎯 Future Improvements
+
+- 📱 Make fully responsive (mobile + tablet)
+- ✨ Add animations (hover effects, transitions)
+- ⚡ Optimize images and performance
+- 🌐 Deploy project (Vercel / Netlify)
+
+---
+
+## 📸 Preview
+
+![Preview Image](./public/Images/Preview%20Image.png)
+
+---
