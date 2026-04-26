@@ -79,7 +79,7 @@ The project demonstrates a key React pattern:
 
 > **UI = f(state)**
 
-### Example Flow:
+### Example Flow
 
 - `App.jsx` manages:
   - `heroCount`
@@ -117,11 +117,11 @@ npm run dev
 
 ## 🐛 Key Learning / Bug Fix Highlight
 
-### ❌ Issue :
+### ❌ Issue
 
 Blank screen due to missing render condition.
 
-### ✅ Fix :
+### ✅ Fix
 
 Handled all `heroCount` cases and added fallback return.
 
@@ -150,7 +150,7 @@ return <img src={image1} className="background" alt="" />;
 - 🌙 Add dark/light theme toggle
 - ⚡ Optimize performance (lazy loading media)
 
-## 📸 Preview\
+## 📸 Preview
 
 ![Preview Image 1](../EVolution%20Landing%20Page/src/assets/preview1.png)
 
