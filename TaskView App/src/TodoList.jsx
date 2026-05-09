@@ -15,13 +15,40 @@ const TodoList = () => {
     });
     setNewTodo("");
   };
-  //function to control the input field
 
+  //function to control the input field
   const updateTodoValue = (event) => {
     event.preventDefault();
     console.log(event.target.value);
     setNewTodo(event.target.value);
   };
+
+  const uppercase = () => {
+    setTodos((todos) =>
+      todos.map((todo) => {
+        return {
+          ...todo,
+          task: todo.task.toUpperCase(),
+        };
+      }),
+    );
+  };
+
+  const uppercaseOne = (id) => {
+    setTodos((todos) =>
+      todos.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            task: todo.task.toUpperCase(),
+          };
+        } else {
+          return todo;
+        }
+      }),
+    );
+  };
+
   return (
     <div className="flex flex-col w-4/10 h-fit text-center m-auto mt-12 bg-white p-10  rounded-lg justify-center shadow-2xl shadow-gray-600 ">
       <div className="flex">
