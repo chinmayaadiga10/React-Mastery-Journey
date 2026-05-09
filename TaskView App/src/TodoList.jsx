@@ -3,6 +3,18 @@ import { v4 as uuidv4 } from "uuid";
 
 const TodoList = () => {
   let [NewTodo, setNewTodo] = useState("");
+  let [todos, setTodos] = useState([
+    { task: "sample task", id: uuidv4(), isDone: false },
+  ]);
+
+  //function to add the new input value to the todo list
+  const addNewTask = () => {
+    console.log("button was clicked");
+    setTodos((prevTodos) => {
+      return [...prevTodos, { task: NewTodo, id: uuidv4(), isDone: false }];
+    });
+    setNewTodo("");
+  };
   //function to control the input field
 
   const updateTodoValue = (event) => {
