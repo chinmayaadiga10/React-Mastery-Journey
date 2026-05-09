@@ -1,16 +1,107 @@
-# React + Vite
+# 🚀 TaskView
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive task management application built using React and Tailwind CSS.
 
-Currently, two official plugins are available:
+TaskView allows users to create, manage, update, and track daily tasks with a clean and minimal user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ Add new tasks dynamically  
+✅ Delete tasks instantly  
+✅ Mark individual tasks as completed  
+✅ Mark all tasks as completed  
+✅ Convert individual tasks to uppercase  
+✅ Convert all tasks to uppercase  
+✅ Controlled input handling
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category    | Technologies Used |
+| ----------- | ----------------- |
+| ⚛️ Frontend | React.js          |
+| 🎨 Styling  | Tailwind CSS      |
+| 🧠 Language | JavaScript (ES6+) |
+
+## 📂 Project Structure
+
+```bash
+.
+└── TaskView App/
+    ├── public
+    ├── src/
+    │   ├── assets
+    │   ├── app.jsx
+    │   ├── app.css
+    │   ├── index.css
+    │   ├── main.jsx
+    │   └── TodoList.jsx
+    ├── index.html
+    ├── README.md
+    ├── package.json
+    └── vite.config.js
+```
+
+---
+
+## 🧠 What I Learnt
+
+This project helped practice and strengthen understanding of:
+
+- Functional Components
+- useState Hook
+- Controlled Inputs
+- Event Handling
+- Conditional Rendering
+- Array Methods
+  - map()
+  - filter()
+- Immutable State Updates
+- Dynamic List Rendering
+- Component-Based Architecture
+
+---
+
+## 🎨 UI/UX Improvements
+
+The UI was redesigned using modern frontend design principles:
+
+- Consistent spacing system
+- Minimal color palette
+- Card-based layout
+- Visual hierarchy
+
+---
+
+## ⚡ Installation and Setup
+
+```bash
+### Clone the repository
+
+git clone <your-repository-url>
+
+### Navigate into the project
+
+cd TaskView App
+
+### Install dependencies
+
+npm install
+npm install tailwindcss @tailwindcss/vite
+npm install uuid
+
+### Start development server
+
+npm run dev
+
+```
+
+---
+
+## 📸 Preview
+
+![TaskView Screenshot](./public/Image1.png)
+![TaskView Screenshot](./public/Image2.png)
+
+---
