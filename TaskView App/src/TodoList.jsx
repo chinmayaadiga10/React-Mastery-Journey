@@ -49,6 +49,32 @@ const TodoList = () => {
     );
   };
 
+  const markEverything = () => {
+    setTodos((todos) =>
+      todos.map((todo) => {
+        return {
+          ...todo,
+          isDone: true,
+        };
+      }),
+    );
+  };
+
+  const markDone = (id) => {
+    setTodos((todos) =>
+      todos.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            isDone: true,
+          };
+        } else {
+          return todo;
+        }
+      }),
+    );
+  };
+
   return (
     <div className="flex flex-col w-4/10 h-fit text-center m-auto mt-12 bg-white p-10  rounded-lg justify-center shadow-2xl shadow-gray-600 ">
       <div className="flex">
