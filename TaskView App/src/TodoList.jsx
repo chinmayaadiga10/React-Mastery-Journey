@@ -75,6 +75,12 @@ const TodoList = () => {
     );
   };
 
+  const deleteTodo = (id) => {
+    setTodos((prevTodos) =>
+      prevTodos.filter((prevTodos) => prevTodos.id != id),
+    );
+  };
+
   return (
     <div className="flex flex-col w-4/10 h-fit text-center m-auto mt-12 bg-white p-10  rounded-lg justify-center shadow-2xl shadow-gray-600 ">
       <div className="flex">
